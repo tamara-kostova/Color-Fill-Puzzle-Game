@@ -105,10 +105,10 @@ def main():
                     else:
                         col, row = x // SQUARE_SIZE, y // SQUARE_SIZE
                         if 0 <= row < BOARD_SIZE and 0 <= col < BOARD_SIZE and selected_color:
-                            if is_valid_move(board, row, col, selected_color):
-                                update_board(board, row, col, selected_color)
-                                if is_winning_state(board):
-                                    game_won = True
+                            # if is_valid_move(board, row, col, selected_color):
+                            update_board(board, row, col, selected_color)
+                            if is_winning_state(board):
+                                game_won = True
 
         screen.fill((255, 255, 255))
         draw_board(board)

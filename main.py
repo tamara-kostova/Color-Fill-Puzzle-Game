@@ -108,7 +108,7 @@ def main():
                             if is_valid_move(board, row, col, selected_color):
                                 update_board(board, row, col, selected_color)
                                 if is_winning_state(board):
-                                    game_won = True  # Set game to won state
+                                    game_won = True
 
         screen.fill((255, 255, 255))
         draw_board(board)
